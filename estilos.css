@@ -11,9 +11,9 @@
 .nav{
     display: flex;
     position: relative;
-    height: 120px;
+    height: 15vh;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 225, 0, 0.384);
     flex-wrap: wrap;
@@ -160,14 +160,14 @@
     border: 1.5px solid black;
 }
 .slider__html{
-    background-color: #e34c26c0;
+    background-color: #e34c26ce;
     color: white;
     text-align: center;
 }
 
 .slider__html p , .slider__css p, .slider__js p,.slider__py p{
     text-align: start;
-    text-shadow: 0px 0px 2px black;
+    text-shadow: 0px 0px 20px black;
     font-size: 1.1rem;
 }
 .slider__css{
@@ -176,7 +176,7 @@
     text-align: center;
 }
 .slider__js{
-    background-color: #f0da4f;
+    background-color: #fce23a;
     color: white;
     text-align: center;
 }
@@ -293,7 +293,7 @@
     
     .hero{
         padding: 0.1px;
-        padding-top: 15vh;
+        padding-top: 10vh;
         height: auto;
     }
     .about{
@@ -330,6 +330,7 @@
         height: auto;
     }
 }
+
 @media screen and (max-width:768px) {
     .hero__imagen , .container__imagen{
         width: 70%;
@@ -387,5 +388,17 @@
 @media screen and (max-width:435) {
     .container__texto{
         width: 90%;
+    }
+}
+@media screen and (max-width:520px) {
+    .hero{
+        padding: 20px ;
+    }
+    
+    .hero__title{
+        font-size: 2rem;
+    }
+    .hero__texto , .hero__texto--fs{
+        font-size: 1rem;
     }
 }
